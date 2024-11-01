@@ -36,11 +36,14 @@ public class Person {
         this.id = id;
     }
 
-    public @NotEmpty(message = "Имя не должно быть пустым") @Size(min = 2, max = 100, message = "Имя должлно быть от 2 до 100 символов") String getName() {
+    public @NotEmpty(message = "Имя не должно быть пустым")
+    @Size(min = 2, max = 100, message = "Имя должлно быть от 2 до 100 символов")
+    String getName() {
         return name;
     }
 
-    public void setName(@NotEmpty(message = "Имя не должно быть пустым") @Size(min = 2, max = 100, message = "Имя должлно быть от 2 до 100 символов") String name) {
+    public void setName(@NotEmpty(message = "Имя не должно быть пустым")
+                        @Size(min = 2, max = 100, message = "Имя должлно быть от 2 до 100 символов") String name) {
         this.name = name;
     }
 
